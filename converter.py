@@ -69,7 +69,7 @@ class UnitConverter(QtWidgets.QWidget):
         if category == "Длина":
             units = {"м": 1, "км": 1000, "см": 0.01}
         else:
-            units = {"г": 1, "кг": 1000, "т": 1000000}
+            units = {"г": 1, "кило": 1000, "т": 1000000}
         return units[from_unit] / units[to_unit]
 
 app = QtWidgets.QApplication(sys.argv)
